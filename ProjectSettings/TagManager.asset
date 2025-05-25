@@ -13,6 +13,7 @@ TagManager:
   - CoinTarget
   - CoinUI
   - Box
+  - PuzzleTrigger
   layers:
   - Default
   - TransparentFX

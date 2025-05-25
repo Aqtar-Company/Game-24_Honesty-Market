@@ -34,28 +34,47 @@ public class SliderSequenceAnimator : MonoBehaviour
 
 	private void Start()
 	{
-		// initialize loading
+		// Defensive null check
+		bool skipLoading = LevelManager.Instance != null && LevelManager.Instance.LoadingBefore;
+
+		if (skipLoading)
+		{
+			// Skip loading animation, hide loading UI, and show Start button directly
+			sliderObject?.SetActive(false);
+			SetAlpha(panelImage, 1f); // show panels, or use 0f if you want them hidden
+			SetAlpha(backgroundsToFadeOut, 0f);
+			SetAlpha(backgroundsToFadeIn, 1f);
+
+			if (startButtonImage != null)
+				startButtonImage.color = startButtonImage.color.WithAlpha(1f);
+			if (startButton != null)
+				startButton.interactable = true;
+
+			// Put crash objects to their original place
+			foreach (var c in crashObjects)
+				c?.Setup(0f);
+
+			return; // Do NOT run the loading animation!
+		}
+
+		// Animation sequence as normal
 		slider.value = 0f;
 		sliderObject?.SetActive(true);
 
-		// panels start transparent
 		SetAlpha(panelImage, 0f);
-
-		// backgrounds: out = 1, in = 0
 		SetAlpha(backgroundsToFadeOut, 1f);
 		SetAlpha(backgroundsToFadeIn, 0f);
 
-		// start button image starts invisible & non-interactable
 		if (startButtonImage != null)
 			startButtonImage.color = startButtonImage.color.WithAlpha(0f);
 		if (startButton != null)
 			startButton.interactable = false;
 
-		// position crash objects off-screen
 		foreach (var c in crashObjects) c?.Setup(crashOffsetDistance);
 
 		RunAllAnimations();
 	}
+
 
 	private void RunAllAnimations()
 	{
