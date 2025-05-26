@@ -71,7 +71,7 @@ public class SliderSequenceAnimator : MonoBehaviour
 			startButton.interactable = false;
 
 		foreach (var c in crashObjects) c?.Setup(crashOffsetDistance);
-
+		LevelManager.Instance.LoadingBefore = true;
 		RunAllAnimations();
 	}
 

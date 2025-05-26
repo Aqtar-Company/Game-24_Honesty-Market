@@ -372,6 +372,7 @@ MonoBehaviour:
   - canvas: {fileID: 1768201645}
     panelGroup: {fileID: 1272001753}
     imageGroup:
+    - {fileID: 3950584242542917165}
     - {fileID: 1690760231}
     - {fileID: 1595163393}
     - {fileID: 1763561497}
@@ -827,6 +828,7 @@ MonoBehaviour:
   - {fileID: 888974824}
   indexlevel: 1
   EndGameVar: 0
+  panelBlockClick: {fileID: 606456754}
 --- !u!114 &687763316 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5220877272443667395, guid: 081ac443b6ada514a9bef9b979beb26f, type: 3}
@@ -5297,6 +5299,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 175518262077198284, guid: 081ac443b6ada514a9bef9b979beb26f, type: 3}
   m_PrefabInstance: {fileID: 3950584242542917161}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3950584242542917165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8197571756123021409, guid: 081ac443b6ada514a9bef9b979beb26f, type: 3}
+  m_PrefabInstance: {fileID: 3950584242542917161}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606456754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

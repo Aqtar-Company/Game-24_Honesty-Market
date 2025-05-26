@@ -642,6 +642,14 @@ PrefabInstance:
       value: CheckLandSCapemange
       objectReference: {fileID: 0}
     - target: {fileID: 4408786879782117749, guid: f3d347d1c6308604d86607ea7c2b04df, type: 3}
+      propertyPath: m_Url
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408786879782117749, guid: f3d347d1c6308604d86607ea7c2b04df, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408786879782117749, guid: f3d347d1c6308604d86607ea7c2b04df, type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: e4b7a1d98cbdb6742a20cff3d0d22d21, type: 2}
@@ -937,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5255a55e5f5d864d8a57a3e061a2e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSourcePrefab: {fileID: 8328542681908722404, guid: d26b7aa9b398bab4abb03455daeda972, type: 3}
+  audioSourcePrefab: {fileID: 8328542681908722404, guid: add70a60b7c2f13428da75a01acaee0f, type: 3}
   soundList:
   - key: Jump
     clip: {fileID: 8300000, guid: e091c90f11d3476448012b48b77bed90, type: 3}

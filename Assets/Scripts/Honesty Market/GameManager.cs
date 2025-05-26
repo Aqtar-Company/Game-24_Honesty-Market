@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
 
 		if (shop != null)
 			shop.SetActive(false);
-
+		panelBlockClick.gameObject.SetActive(false);
 		ShowAllCalcPanels(true);
 	}
 
@@ -198,6 +198,7 @@ public class GameManager : MonoBehaviour
 	private IEnumerator DelayedEndGame(bool didWin)
 	{
 		EndGameVar = true;
+		panelBlockClick.gameObject.SetActive(true);
 		yield return new WaitForSeconds(2.3f);
 		EndGame(didWin);
 	}
