@@ -35,7 +35,7 @@ public class CarController : MonoBehaviour
 	private float currentSpeed = 0f;
 	private bool gameLost = false;
 	private bool isPaused = false;
-	private bool isStopping = false;
+	public bool isStopping = false;
 	private bool isMoving = false;
 
 	// Input state
@@ -142,7 +142,11 @@ public class CarController : MonoBehaviour
 			StartCoroutine(StopCarCoroutine());
 		}
 	}
-
+	public void StopCar()
+	{
+		isStopping = true;
+		StartCoroutine(StopCarCoroutine());
+	}
 	private IEnumerator StopCarCoroutine()
 	{
 		isPaused = true;

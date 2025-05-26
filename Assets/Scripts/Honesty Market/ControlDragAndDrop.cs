@@ -158,6 +158,7 @@ public class ControlDragAndDrop : MonoBehaviour
 	{
 		yield return new WaitForSeconds(resumeDelay);
 		CarController.Instance?.ResumeMovement();
+		bridge.gameObject.SetActive(true);
 		itemsPanel.SetActive(false);
 	}
 	private void CheckCompletionFinished()
@@ -175,7 +176,6 @@ public class ControlDragAndDrop : MonoBehaviour
 
 		if (completionImage != null)
 			completionImage.gameObject.SetActive(true);
-		bridge.gameObject.SetActive(true);
 
 		if (CarController.Instance != null)
 			StartCoroutine(ResumeCarAfterDelay());

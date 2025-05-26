@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aee5afb9948663746973b9e92521b8e3
+guid: 100eea19550a1024fb42367360ec4515
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5885672680379626824
-    second: Asset 349_0
+      213: -7130767313926454138
+    second: Character with Empty Basket1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Asset 349_0
+      name: Character with Empty Basket1_0
       rect:
         serializedVersion: 2
-        x: 145
-        y: 25
-        width: 299
-        height: 407
+        x: 0
+        y: 0
+        width: 936
+        height: 1158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 845bf328e1c1ea150800000000000000
-      internalID: 5885672680379626824
+      spriteID: 684827d88ec6a0d90800000000000000
+      internalID: -7130767313926454138
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Asset 349_0: 5885672680379626824
+      Character with Empty Basket1_0: -7130767313926454138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
